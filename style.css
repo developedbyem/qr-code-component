@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* --------------- */
+
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-100: hsl(212, 45%, 89%);
+  --clr-gray-500: hsl(219, 15%, 55%);
+  --clr-blue-900: hsl(218, 44%, 22%);
+
+  --font-size-basic: 0.9375rem; /* 400,700 */
+}
+/* ---------------- */
+body {
+  background-color: var(--clr-gray-100);
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-basic);
+  font-weight: 400;
+  user-select: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.3rem;
+}
+@media screen and (min-width: 768px) {
+  main {
+    min-height: 100vh;
+    padding-top: 0;
+  }
+}
+.qr-card {
+  width: 85.29%;
+  max-width: 320px;
+  background-color: var(--clr-white);
+  border-radius: 1.2rem;
+  box-shadow: 0 25px 25px rgba(123, 135, 157, 15%);
+}
+
+.container {
+  padding: 1rem 1rem 2.49rem;
+}
+
+.card-image {
+  border-radius: 0.65rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.card-content {
+  text-align: center;
+}
+.title {
+  font-weight: 700;
+  color: var(--clr-blue-900);
+  padding-bottom: 1rem;
+  line-height: 1.27;
+  font-size: 1.387rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.subtitle {
+  color: var(--clr-gray-500);
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 0.965rem;
+  line-height: 1.225;
+}
